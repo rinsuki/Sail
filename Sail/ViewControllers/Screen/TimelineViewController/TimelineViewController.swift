@@ -77,7 +77,8 @@ class TimelineViewController: UIViewController, Instantiatable {
         refreshControl.beginRefreshing()
         let snapshot = diffableDataSource.snapshot()
         let sinceId = snapshot.itemIdentifiers(inSection: .main).first?.id
-        let request = environment.userCredential.request(r: SeaAPI.PublicTimeline(count: 100, sinceId: sinceId)) { result in
+        let request = SeaAPI.PublicTimeline(count: sinceId != nil ? 100 : nil, sinceId: sinceId)
+        let task = environment.userCredential.request(r: request) { result in
             switch result {
             case .success(let posts):
                 var snapshot = self.diffableDataSource.snapshot()
@@ -96,6 +97,6 @@ class TimelineViewController: UIViewController, Instantiatable {
                 self.refreshControl.endRefreshing()
             }
         }
-        request.resume()
+        task.resume()
     }
 }
