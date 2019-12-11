@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>c80c3df3cb86987744028c3c9307f5b1793597a8d842e2f28c98a6a7df7f8cef</key>
+	<dict>
+		<key>clientSecret</key>
+		<string>89e2463b79952cb37d4376d9103322acfe35213ceb13f8bffd9896892ebb7e32</string>
+		<key>clientId</key>
+		<string>c84fd9a7b6382822a8078737a3d133f3373ff0014474099c30c4ad29f4d62699</string>
+	</dict>
+	<key>8689051b9f6345f302cecdcd4f0c4f79542b8dd6c5a0a9caf9f3ea577c2f6f46</key>
+	<dict>
+		<key>clientSecret</key>
+		<string>e46c986d52be6d41d75703c620a976350143c8e048eadc053c904fea478a1e2f</string>
+		<key>clientId</key>
+		<string>834fdc2e185b8196b1c35ae830dc5990ba586c018d9bb31b0a8243e77e79ec0a</string>
+	</dict>
+	<key>5bdcd62a954ebe1802d7828c7b60ccbd2bd2f5b626cc69342ca663227d024388</key>
+	<dict>
+		<key>clientSecret</key>
+		<string>c8ebbea40d3bcf166ab49079863aaafe7f702a45cc9db13597c756456e9c21e6</string>
+		<key>clientId</key>
+		<string>fb76f82c33d4ca209b94be2982309b6e6d29449aa908f2bd6492f4ba250c0640</string>
+	</dict>
+</dict>
+</plist>

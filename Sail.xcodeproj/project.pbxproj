@@ -3,18 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1D3073EEDF91B780566441 /* Pods_SailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCD10366290E546AA072C1D /* Pods_SailCore.framework */; };
+		A7863A114EBC0F5F891CCE86 /* Pods_SailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6CF5AE33E11503C00CC466 /* Pods_SailUITests.framework */; };
+		BCF8D8748A5FA27DC1E4B41C /* Pods_SailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3734FAF422DB4023930FC35 /* Pods_SailTests.framework */; };
+		BF06FEBFAB146FD35881A8F6 /* Pods_Sail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7326A19B3E2F59F45D2FFFC6 /* Pods_Sail.framework */; };
 		CE0AC522231700A900E5B1AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC521231700A900E5B1AD /* AppDelegate.swift */; };
 		CE0AC524231700A900E5B1AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC523231700A900E5B1AD /* SceneDelegate.swift */; };
-		CE0AC526231700A900E5B1AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC525231700A900E5B1AD /* ContentView.swift */; };
 		CE0AC528231700AC00E5B1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC527231700AC00E5B1AD /* Assets.xcassets */; };
 		CE0AC52B231700AC00E5B1AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC52A231700AC00E5B1AD /* Preview Assets.xcassets */; };
 		CE0AC52E231700AC00E5B1AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC52C231700AC00E5B1AD /* LaunchScreen.storyboard */; };
 		CE0AC539231700AC00E5B1AD /* SailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC538231700AC00E5B1AD /* SailTests.swift */; };
 		CE0AC544231700AC00E5B1AD /* SailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC543231700AC00E5B1AD /* SailUITests.swift */; };
+		CE1BD1C9231CEFB2001A8D32 /* LoginInputHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1C8231CEFB2001A8D32 /* LoginInputHostViewController.swift */; };
+		CE1BD1CD231CF300001A8D32 /* EurekaFunctionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */; };
+		CE2734DF231EC09800A25FEB /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2734DE231EC09800A25FEB /* LoginConfirmViewController.swift */; };
+		CE2734E1231EC72700A25FEB /* AuthClient.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2734E0231EC72700A25FEB /* AuthClient.plist */; };
+		CE2734E6231ECC8B00A25FEB /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2734E5231ECC8B00A25FEB /* AuthClient.swift */; };
+		CE5BD2042319660000244FA7 /* CompactPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BD2022319660000244FA7 /* CompactPostViewController.swift */; };
+		CE5BD2052319660000244FA7 /* CompactPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5BD2032319660000244FA7 /* CompactPostViewController.xib */; };
+		CE5BD20923198E8500244FA7 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BD20723198E8500244FA7 /* IconViewController.swift */; };
+		CE5BD20A23198E8500244FA7 /* IconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5BD20823198E8500244FA7 /* IconViewController.xib */; };
+		CE8F7BF9238519FF00E32601 /* SailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F7BF0238519FF00E32601 /* SailCore.framework */; };
+		CE8F7C00238519FF00E32601 /* SailCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7BFF238519FF00E32601 /* SailCoreTests.swift */; };
+		CE8F7C02238519FF00E32601 /* SailCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8F7BF2238519FF00E32601 /* SailCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8F7C05238519FF00E32601 /* SailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F7BF0238519FF00E32601 /* SailCore.framework */; };
+		CE8F7C06238519FF00E32601 /* SailCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F7BF0238519FF00E32601 /* SailCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE8F7C0E23851A3200E32601 /* SeaAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8F7C0D23851A3200E32601 /* SeaAPI */; };
+		CE8F7C1123851A6600E32601 /* SeaAccountToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7C1023851A6600E32601 /* SeaAccountToken.swift */; };
+		CE8F7C1323851A7400E32601 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7C1223851A7400E32601 /* Database.swift */; };
+		CE8F7C1523866C0700E32601 /* ApplicationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7C1423866C0700E32601 /* ApplicationGroup.swift */; };
+		CE8FADE323896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FADE223896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift */; };
+		CE93D84C239FEFB10077E230 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93D84B239FEFB10077E230 /* NewPostViewController.swift */; };
+		CEC740992318791500B8615C /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC740982318791500B8615C /* TimelineViewController.swift */; };
+		CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */; };
+		CEDE9E54237FCA5C00CFBCC9 /* TopLeftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */; };
+		CEDE9E56237FCE7500CFBCC9 /* ModalNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +59,59 @@
 			remoteGlobalIDString = CE0AC51D231700A900E5B1AD;
 			remoteInfo = Sail;
 		};
+		CE8F7BFA238519FF00E32601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0AC516231700A900E5B1AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8F7BEF238519FF00E32601;
+			remoteInfo = SailCore;
+		};
+		CE8F7BFC238519FF00E32601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0AC516231700A900E5B1AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0AC51D231700A900E5B1AD;
+			remoteInfo = Sail;
+		};
+		CE8F7C03238519FF00E32601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0AC516231700A900E5B1AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8F7BEF238519FF00E32601;
+			remoteInfo = SailCore;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CEB4B65823171D3400279360 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE8F7C06238519FF00E32601 /* SailCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		224E5D7AF31652D1D2CFF2CD /* Pods-SailUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailUITests.debug.xcconfig"; path = "Target Support Files/Pods-SailUITests/Pods-SailUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BCD10366290E546AA072C1D /* Pods_SailCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SailCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E40F793C2AD76EC08D6B4E0 /* Pods-SailUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailUITests.release.xcconfig"; path = "Target Support Files/Pods-SailUITests/Pods-SailUITests.release.xcconfig"; sourceTree = "<group>"; };
+		44F966415A1C3558A6A0C2F0 /* Pods-SailCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailCore.debug.xcconfig"; path = "Target Support Files/Pods-SailCore/Pods-SailCore.debug.xcconfig"; sourceTree = "<group>"; };
+		7326A19B3E2F59F45D2FFFC6 /* Pods_Sail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8128E26BD646754CBA3FCAAA /* Pods-Sail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sail.debug.xcconfig"; path = "Target Support Files/Pods-Sail/Pods-Sail.debug.xcconfig"; sourceTree = "<group>"; };
+		9D6CF5AE33E11503C00CC466 /* Pods_SailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SailUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25BBF4F663AA52D2EDA2CC5 /* Pods-SailCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailCore.release.xcconfig"; path = "Target Support Files/Pods-SailCore/Pods-SailCore.release.xcconfig"; sourceTree = "<group>"; };
+		B30C45FA8AC4BB85EA50ABAF /* Pods-Sail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sail.release.xcconfig"; path = "Target Support Files/Pods-Sail/Pods-Sail.release.xcconfig"; sourceTree = "<group>"; };
+		C04478262F0C7826A917A375 /* Pods-SailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailTests.release.xcconfig"; path = "Target Support Files/Pods-SailTests/Pods-SailTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3734FAF422DB4023930FC35 /* Pods_SailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89890F44715A56E1A8F8E80 /* Pods-SailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailTests.debug.xcconfig"; path = "Target Support Files/Pods-SailTests/Pods-SailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0AC51E231700A900E5B1AD /* Sail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0AC521231700A900E5B1AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0AC523231700A900E5B1AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE0AC525231700A900E5B1AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE0AC527231700AC00E5B1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0AC52A231700AC00E5B1AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE0AC52D231700AC00E5B1AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +122,32 @@
 		CE0AC53F231700AC00E5B1AD /* SailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0AC543231700AC00E5B1AD /* SailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailUITests.swift; sourceTree = "<group>"; };
 		CE0AC545231700AC00E5B1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1BD1C8231CEFB2001A8D32 /* LoginInputHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputHostViewController.swift; sourceTree = "<group>"; };
+		CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaFunctionBuilder.swift; sourceTree = "<group>"; };
+		CE1BD1CE231D2F39001A8D32 /* Sail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sail.entitlements; sourceTree = "<group>"; };
+		CE1BD1CF231D500F001A8D32 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE2734DE231EC09800A25FEB /* LoginConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfirmViewController.swift; sourceTree = "<group>"; };
+		CE2734E0231EC72700A25FEB /* AuthClient.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthClient.plist; sourceTree = "<group>"; };
+		CE2734E5231ECC8B00A25FEB /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		CE5BD2022319660000244FA7 /* CompactPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactPostViewController.swift; sourceTree = "<group>"; };
+		CE5BD2032319660000244FA7 /* CompactPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompactPostViewController.xib; sourceTree = "<group>"; };
+		CE5BD20723198E8500244FA7 /* IconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewController.swift; sourceTree = "<group>"; };
+		CE5BD20823198E8500244FA7 /* IconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconViewController.xib; sourceTree = "<group>"; };
+		CE8F7BF0238519FF00E32601 /* SailCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SailCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8F7BF2238519FF00E32601 /* SailCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SailCore.h; sourceTree = "<group>"; };
+		CE8F7BF3238519FF00E32601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8F7BF8238519FF00E32601 /* SailCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8F7BFF238519FF00E32601 /* SailCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailCoreTests.swift; sourceTree = "<group>"; };
+		CE8F7C01238519FF00E32601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8F7C1023851A6600E32601 /* SeaAccountToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaAccountToken.swift; sourceTree = "<group>"; };
+		CE8F7C1223851A7400E32601 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		CE8F7C1423866C0700E32601 /* ApplicationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationGroup.swift; sourceTree = "<group>"; };
+		CE8FADE223896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDiffableDataSource+plainSnapshot.swift"; sourceTree = "<group>"; };
+		CE93D84B239FEFB10077E230 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		CEC740982318791500B8615C /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftTableViewController.swift; sourceTree = "<group>"; };
+		CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +155,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF06FEBFAB146FD35881A8F6 /* Pods_Sail.framework in Frameworks */,
+				CE8F7C05238519FF00E32601 /* SailCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF8D8748A5FA27DC1E4B41C /* Pods_SailTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +172,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7863A114EBC0F5F891CCE86 /* Pods_SailUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8F7BED238519FF00E32601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8F7C0E23851A3200E32601 /* SeaAPI in Frameworks */,
+				6E1D3073EEDF91B780566441 /* Pods_SailCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8F7BF5238519FF00E32601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8F7BF9238519FF00E32601 /* SailCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11765E57B963985971DE27C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8128E26BD646754CBA3FCAAA /* Pods-Sail.debug.xcconfig */,
+				B30C45FA8AC4BB85EA50ABAF /* Pods-Sail.release.xcconfig */,
+				C89890F44715A56E1A8F8E80 /* Pods-SailTests.debug.xcconfig */,
+				C04478262F0C7826A917A375 /* Pods-SailTests.release.xcconfig */,
+				224E5D7AF31652D1D2CFF2CD /* Pods-SailUITests.debug.xcconfig */,
+				3E40F793C2AD76EC08D6B4E0 /* Pods-SailUITests.release.xcconfig */,
+				44F966415A1C3558A6A0C2F0 /* Pods-SailCore.debug.xcconfig */,
+				B25BBF4F663AA52D2EDA2CC5 /* Pods-SailCore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE0AC515231700A900E5B1AD = {
 			isa = PBXGroup;
 			children = (
 				CE0AC520231700A900E5B1AD /* Sail */,
 				CE0AC537231700AC00E5B1AD /* SailTests */,
 				CE0AC542231700AC00E5B1AD /* SailUITests */,
+				CE8F7BF1238519FF00E32601 /* SailCore */,
+				CE8F7BFE238519FF00E32601 /* SailCoreTests */,
 				CE0AC51F231700A900E5B1AD /* Products */,
+				11765E57B963985971DE27C7 /* Pods */,
+				D9919DA2E1BE1130C28F2F67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +231,8 @@
 				CE0AC51E231700A900E5B1AD /* Sail.app */,
 				CE0AC534231700AC00E5B1AD /* SailTests.xctest */,
 				CE0AC53F231700AC00E5B1AD /* SailUITests.xctest */,
+				CE8F7BF0238519FF00E32601 /* SailCore.framework */,
+				CE8F7BF8238519FF00E32601 /* SailCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +240,15 @@
 		CE0AC520231700A900E5B1AD /* Sail */ = {
 			isa = PBXGroup;
 			children = (
+				CE1BD1CE231D2F39001A8D32 /* Sail.entitlements */,
 				CE0AC521231700A900E5B1AD /* AppDelegate.swift */,
 				CE0AC523231700A900E5B1AD /* SceneDelegate.swift */,
-				CE0AC525231700A900E5B1AD /* ContentView.swift */,
+				CE5BD1FC2319646500244FA7 /* ViewControllers */,
+				CE1BD1CA231CF267001A8D32 /* Utilities */,
+				CE0AC529231700AC00E5B1AD /* Preview Content */,
 				CE0AC527231700AC00E5B1AD /* Assets.xcassets */,
 				CE0AC52C231700AC00E5B1AD /* LaunchScreen.storyboard */,
 				CE0AC52F231700AC00E5B1AD /* Info.plist */,
-				CE0AC529231700AC00E5B1AD /* Preview Content */,
 			);
 			path = Sail;
 			sourceTree = "<group>";
@@ -136,20 +279,192 @@
 			path = SailUITests;
 			sourceTree = "<group>";
 		};
+		CE1BD1CA231CF267001A8D32 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE2734E8231ECC9600A25FEB /* Extends */,
+				CE2734E7231ECC9200A25FEB /* AuthClient */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE1BD1CB231CF2E5001A8D32 /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */,
+			);
+			path = Eureka;
+			sourceTree = "<group>";
+		};
+		CE2734E7231ECC9200A25FEB /* AuthClient */ = {
+			isa = PBXGroup;
+			children = (
+				CE2734E0231EC72700A25FEB /* AuthClient.plist */,
+				CE2734E5231ECC8B00A25FEB /* AuthClient.swift */,
+			);
+			path = AuthClient;
+			sourceTree = "<group>";
+		};
+		CE2734E8231ECC9600A25FEB /* Extends */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FADE123896DBF00B0CF94 /* UIKit */,
+				CE1BD1CB231CF2E5001A8D32 /* Eureka */,
+			);
+			path = Extends;
+			sourceTree = "<group>";
+		};
+		CE5BD1FC2319646500244FA7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BD20D2319C5F500244FA7 /* Screen */,
+				CE5BD20C2319C5EB00244FA7 /* Common */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE5BD1FD2319647200244FA7 /* CompactPostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BD2022319660000244FA7 /* CompactPostViewController.swift */,
+				CE5BD2032319660000244FA7 /* CompactPostViewController.xib */,
+			);
+			path = CompactPostViewController;
+			sourceTree = "<group>";
+		};
+		CE5BD20623198E4700244FA7 /* IconViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BD20723198E8500244FA7 /* IconViewController.swift */,
+				CE5BD20823198E8500244FA7 /* IconViewController.xib */,
+			);
+			path = IconViewController;
+			sourceTree = "<group>";
+		};
+		CE5BD20C2319C5EB00244FA7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE5BD20623198E4700244FA7 /* IconViewController */,
+				CE5BD1FD2319647200244FA7 /* CompactPostViewController */,
+				CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE5BD20D2319C5F500244FA7 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE9E50237FCA3100CFBCC9 /* TopViewController */,
+				CE5BD211231B5C7300244FA7 /* LoginViewController */,
+				CE5BD214231B5CE500244FA7 /* TimelineViewController */,
+				CE93D84A239FE2F10077E230 /* NewPostViewController */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		CE5BD211231B5C7300244FA7 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BD1C8231CEFB2001A8D32 /* LoginInputHostViewController.swift */,
+				CE2734DE231EC09800A25FEB /* LoginConfirmViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		CE5BD214231B5CE500244FA7 /* TimelineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEC740982318791500B8615C /* TimelineViewController.swift */,
+			);
+			path = TimelineViewController;
+			sourceTree = "<group>";
+		};
+		CE8F7BF1238519FF00E32601 /* SailCore */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F7C1423866C0700E32601 /* ApplicationGroup.swift */,
+				CE8F7C1223851A7400E32601 /* Database.swift */,
+				CE8F7C1023851A6600E32601 /* SeaAccountToken.swift */,
+				CE8F7BF2238519FF00E32601 /* SailCore.h */,
+				CE8F7BF3238519FF00E32601 /* Info.plist */,
+			);
+			path = SailCore;
+			sourceTree = "<group>";
+		};
+		CE8F7BFE238519FF00E32601 /* SailCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F7BFF238519FF00E32601 /* SailCoreTests.swift */,
+				CE8F7C01238519FF00E32601 /* Info.plist */,
+			);
+			path = SailCoreTests;
+			sourceTree = "<group>";
+		};
+		CE8FADE123896DBF00B0CF94 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FADE223896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CE93D84A239FE2F10077E230 /* NewPostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE93D84B239FEFB10077E230 /* NewPostViewController.swift */,
+			);
+			path = NewPostViewController;
+			sourceTree = "<group>";
+		};
+		CEDE9E50237FCA3100CFBCC9 /* TopViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */,
+				CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */,
+			);
+			path = TopViewController;
+			sourceTree = "<group>";
+		};
+		D9919DA2E1BE1130C28F2F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7326A19B3E2F59F45D2FFFC6 /* Pods_Sail.framework */,
+				C3734FAF422DB4023930FC35 /* Pods_SailTests.framework */,
+				9D6CF5AE33E11503C00CC466 /* Pods_SailUITests.framework */,
+				3BCD10366290E546AA072C1D /* Pods_SailCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE8F7BEB238519FF00E32601 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8F7C02238519FF00E32601 /* SailCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CE0AC51D231700A900E5B1AD /* Sail */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0AC548231700AC00E5B1AD /* Build configuration list for PBXNativeTarget "Sail" */;
 			buildPhases = (
+				A5531005778CECBA88E727D5 /* [CP] Check Pods Manifest.lock */,
 				CE0AC51A231700A900E5B1AD /* Sources */,
 				CE0AC51B231700A900E5B1AD /* Frameworks */,
 				CE0AC51C231700A900E5B1AD /* Resources */,
+				CEB4B65823171D3400279360 /* Embed Frameworks */,
+				C18AFC699E33B85E8EC7139A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE8F7C04238519FF00E32601 /* PBXTargetDependency */,
 			);
 			name = Sail;
 			productName = Sail;
@@ -160,6 +475,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0AC54B231700AC00E5B1AD /* Build configuration list for PBXNativeTarget "SailTests" */;
 			buildPhases = (
+				FA70A13CB65A1F3A074ADE7E /* [CP] Check Pods Manifest.lock */,
 				CE0AC530231700AC00E5B1AD /* Sources */,
 				CE0AC531231700AC00E5B1AD /* Frameworks */,
 				CE0AC532231700AC00E5B1AD /* Resources */,
@@ -178,6 +494,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0AC54E231700AC00E5B1AD /* Build configuration list for PBXNativeTarget "SailUITests" */;
 			buildPhases = (
+				A8317C22EDA44D9477BD559B /* [CP] Check Pods Manifest.lock */,
 				CE0AC53B231700AC00E5B1AD /* Sources */,
 				CE0AC53C231700AC00E5B1AD /* Frameworks */,
 				CE0AC53D231700AC00E5B1AD /* Resources */,
@@ -192,13 +509,54 @@
 			productReference = CE0AC53F231700AC00E5B1AD /* SailUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CE8F7BEF238519FF00E32601 /* SailCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8F7C07238519FF00E32601 /* Build configuration list for PBXNativeTarget "SailCore" */;
+			buildPhases = (
+				4118FDEAD6451B5FC24FBB1A /* [CP] Check Pods Manifest.lock */,
+				CE8F7BEB238519FF00E32601 /* Headers */,
+				CE8F7BEC238519FF00E32601 /* Sources */,
+				CE8F7BED238519FF00E32601 /* Frameworks */,
+				CE8F7BEE238519FF00E32601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SailCore;
+			packageProductDependencies = (
+				CE8F7C0D23851A3200E32601 /* SeaAPI */,
+			);
+			productName = SailCore;
+			productReference = CE8F7BF0238519FF00E32601 /* SailCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE8F7BF7238519FF00E32601 /* SailCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8F7C0A238519FF00E32601 /* Build configuration list for PBXNativeTarget "SailCoreTests" */;
+			buildPhases = (
+				CE8F7BF4238519FF00E32601 /* Sources */,
+				CE8F7BF5238519FF00E32601 /* Frameworks */,
+				CE8F7BF6238519FF00E32601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8F7BFB238519FF00E32601 /* PBXTargetDependency */,
+				CE8F7BFD238519FF00E32601 /* PBXTargetDependency */,
+			);
+			name = SailCoreTests;
+			productName = SailCoreTests;
+			productReference = CE8F7BF8238519FF00E32601 /* SailCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CE0AC516231700A900E5B1AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = rinsuki;
 				TargetAttributes = {
@@ -213,6 +571,14 @@
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = CE0AC51D231700A900E5B1AD;
 					};
+					CE8F7BEF238519FF00E32601 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					CE8F7BF7238519FF00E32601 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = CE0AC51D231700A900E5B1AD;
+					};
 				};
 			};
 			buildConfigurationList = CE0AC519231700A900E5B1AD /* Build configuration list for PBXProject "Sail" */;
@@ -222,8 +588,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = CE0AC515231700A900E5B1AD;
+			packageReferences = (
+				CE8F7BE8238518C600E32601 /* XCRemoteSwiftPackageReference "swift-sea-api" */,
+			);
 			productRefGroup = CE0AC51F231700A900E5B1AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +601,8 @@
 				CE0AC51D231700A900E5B1AD /* Sail */,
 				CE0AC533231700AC00E5B1AD /* SailTests */,
 				CE0AC53E231700AC00E5B1AD /* SailUITests */,
+				CE8F7BEF238519FF00E32601 /* SailCore */,
+				CE8F7BF7238519FF00E32601 /* SailCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +612,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5BD2052319660000244FA7 /* CompactPostViewController.xib in Resources */,
+				CE2734E1231EC72700A25FEB /* AuthClient.plist in Resources */,
+				CE5BD20A23198E8500244FA7 /* IconViewController.xib in Resources */,
 				CE0AC52E231700AC00E5B1AD /* LaunchScreen.storyboard in Resources */,
 				CE0AC52B231700AC00E5B1AD /* Preview Assets.xcassets in Resources */,
 				CE0AC528231700AC00E5B1AD /* Assets.xcassets in Resources */,
@@ -260,16 +635,149 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE8F7BEE238519FF00E32601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8F7BF6238519FF00E32601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4118FDEAD6451B5FC24FBB1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SailCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5531005778CECBA88E727D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8317C22EDA44D9477BD559B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SailUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18AFC699E33B85E8EC7139A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sail/Pods-Sail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sail/Pods-Sail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sail/Pods-Sail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA70A13CB65A1F3A074ADE7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SailTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE0AC51A231700A900E5B1AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8FADE323896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */,
+				CEDE9E54237FCA5C00CFBCC9 /* TopLeftTableViewController.swift in Sources */,
+				CE5BD2042319660000244FA7 /* CompactPostViewController.swift in Sources */,
+				CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */,
+				CE2734DF231EC09800A25FEB /* LoginConfirmViewController.swift in Sources */,
+				CE1BD1CD231CF300001A8D32 /* EurekaFunctionBuilder.swift in Sources */,
 				CE0AC522231700A900E5B1AD /* AppDelegate.swift in Sources */,
+				CEDE9E56237FCE7500CFBCC9 /* ModalNavigationViewController.swift in Sources */,
 				CE0AC524231700A900E5B1AD /* SceneDelegate.swift in Sources */,
-				CE0AC526231700A900E5B1AD /* ContentView.swift in Sources */,
+				CE1BD1C9231CEFB2001A8D32 /* LoginInputHostViewController.swift in Sources */,
+				CEC740992318791500B8615C /* TimelineViewController.swift in Sources */,
+				CE5BD20923198E8500244FA7 /* IconViewController.swift in Sources */,
+				CE2734E6231ECC8B00A25FEB /* AuthClient.swift in Sources */,
+				CE93D84C239FEFB10077E230 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +797,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE8F7BEC238519FF00E32601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8F7C1123851A6600E32601 /* SeaAccountToken.swift in Sources */,
+				CE8F7C1523866C0700E32601 /* ApplicationGroup.swift in Sources */,
+				CE8F7C1323851A7400E32601 /* Database.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8F7BF4238519FF00E32601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8F7C00238519FF00E32601 /* SailCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +828,21 @@
 			target = CE0AC51D231700A900E5B1AD /* Sail */;
 			targetProxy = CE0AC540231700AC00E5B1AD /* PBXContainerItemProxy */;
 		};
+		CE8F7BFB238519FF00E32601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8F7BEF238519FF00E32601 /* SailCore */;
+			targetProxy = CE8F7BFA238519FF00E32601 /* PBXContainerItemProxy */;
+		};
+		CE8F7BFD238519FF00E32601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0AC51D231700A900E5B1AD /* Sail */;
+			targetProxy = CE8F7BFC238519FF00E32601 /* PBXContainerItemProxy */;
+		};
+		CE8F7C04238519FF00E32601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8F7BEF238519FF00E32601 /* SailCore */;
+			targetProxy = CE8F7C03238519FF00E32601 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -309,6 +850,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE0AC52D231700AC00E5B1AD /* Base */,
+				CE1BD1CF231D500F001A8D32 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +862,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +923,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -432,19 +976,25 @@
 		};
 		CE0AC549231700AC00E5B1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8128E26BD646754CBA3FCAAA /* Pods-Sail.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sail/Sail.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sail/Preview Content\"";
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Sail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.ios.Sail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,19 +1002,25 @@
 		};
 		CE0AC54A231700AC00E5B1AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B30C45FA8AC4BB85EA50ABAF /* Pods-Sail.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sail/Sail.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sail/Preview Content\"";
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Sail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.ios.Sail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +1028,7 @@
 		};
 		CE0AC54C231700AC00E5B1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89890F44715A56E1A8F8E80 /* Pods-SailTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +1051,7 @@
 		};
 		CE0AC54D231700AC00E5B1AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04478262F0C7826A917A375 /* Pods-SailTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +1074,7 @@
 		};
 		CE0AC54F231700AC00E5B1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 224E5D7AF31652D1D2CFF2CD /* Pods-SailUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +1095,7 @@
 		};
 		CE0AC550231700AC00E5B1AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E40F793C2AD76EC08D6B4E0 /* Pods-SailUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +1111,109 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Sail;
+			};
+			name = Release;
+		};
+		CE8F7C08238519FF00E32601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F966415A1C3558A6A0C2F0 /* Pods-SailCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SailCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.ios.Sail.SailCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE8F7C09238519FF00E32601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25BBF4F663AA52D2EDA2CC5 /* Pods-SailCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SailCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.ios.Sail.SailCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE8F7C0B238519FF00E32601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				INFOPLIST_FILE = SailCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.ios.Sail.SailCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sail.app/Sail";
+			};
+			name = Debug;
+		};
+		CE8F7C0C238519FF00E32601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				INFOPLIST_FILE = SailCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.ios.Sail.SailCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sail.app/Sail";
 			};
 			name = Release;
 		};
@@ -593,7 +1256,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CE8F7C07238519FF00E32601 /* Build configuration list for PBXNativeTarget "SailCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8F7C08238519FF00E32601 /* Debug */,
+				CE8F7C09238519FF00E32601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8F7C0A238519FF00E32601 /* Build configuration list for PBXNativeTarget "SailCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8F7C0B238519FF00E32601 /* Debug */,
+				CE8F7C0C238519FF00E32601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE8F7BE8238518C600E32601 /* XCRemoteSwiftPackageReference "swift-sea-api" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rinsuki/swift-sea-api.git";
+			requirement = {
+				kind = revision;
+				revision = 05a2e2fb8a0b259732dfac4ef74e560de384f852;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE8F7C0D23851A3200E32601 /* SeaAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE8F7BE8238518C600E32601 /* XCRemoteSwiftPackageReference "swift-sea-api" */;
+			productName = SeaAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE0AC516231700A900E5B1AD /* Project object */;
 }

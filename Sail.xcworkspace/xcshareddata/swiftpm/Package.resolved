@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-sea-api",
+        "repositoryURL": "https://github.com/rinsuki/swift-sea-api.git",
+        "state": {
+          "branch": null,
+          "revision": "05a2e2fb8a0b259732dfac4ef74e560de384f852",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
