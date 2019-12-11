@@ -50,9 +50,7 @@ class TimelineViewController: UIViewController, Instantiatable {
         
         var snapshot = diffableDataSource.snapshot()
         snapshot.appendSections([.main])
-        DispatchQueue.global(qos: .userInteractive).sync {
-            diffableDataSource.apply(snapshot, animatingDifferences: false, completion: nil)
-        }
+        diffableDataSource.apply(snapshot, animatingDifferences: false, completion: nil)
         
         checkLatestPosts()
     }
@@ -88,7 +86,7 @@ class TimelineViewController: UIViewController, Instantiatable {
                 } else {
                     snapshot.appendItems(posts, toSection: .main)
                 }
-                DispatchQueue.global(qos: .userInteractive).sync {
+                DispatchQueue.main.sync {
                     self.diffableDataSource.apply(snapshot, animatingDifferences: true, completion: nil)
                 }
             case .failure(let error):
