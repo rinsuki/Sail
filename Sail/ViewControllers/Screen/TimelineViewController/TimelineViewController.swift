@@ -68,7 +68,6 @@ class TimelineViewController: UIViewControllerWithToolbar, Instantiatable {
         super.viewDidLoad()
         TableViewCell<CompactPostViewController>.register(to: tableView)
 
-
         tableView.dataSource = diffableDataSource
         tableView.refreshControl = refreshControl
         view.addSubview(tableView)
@@ -98,6 +97,7 @@ class TimelineViewController: UIViewControllerWithToolbar, Instantiatable {
         diffableDataSource.apply(snapshot, animatingDifferences: false, completion: nil)
         
         checkLatestPosts()
+        view.bringSubviewToFront(toolBar)
     }
     
     func cellProvider(_ tableView: UITableView, indexPath: IndexPath, post: SeaPost) -> UITableViewCell {

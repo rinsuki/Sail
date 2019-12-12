@@ -33,10 +33,11 @@ class UIViewControllerWithToolbar: UIViewController {
 
     @objc func keyboardHeightChanged(_ notification: Notification) {
         print(notification.name)
-        guard var rect = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
+        guard let userInfo = notification.userInfo else { return }
+        guard var rect = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
             return
         }
-        print(notification.userInfo)
+        print(userInfo)
         let isHideNotify = notification.name == UIResponder.keyboardWillHideNotification
         if isHideNotify {
             rect.size.height = 0
@@ -46,11 +47,11 @@ class UIViewControllerWithToolbar: UIViewController {
         if bottom < 44 {
             bottom = 44
         }
-        guard let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else {
+        guard let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else {
             print("duration is nil or invalid")
             return
         }
-        guard let animationCurveRawValue = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt else {
+        guard let animationCurveRawValue = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt else {
             print("animationCurveRawValue is nil or invalid")
             return
         }
