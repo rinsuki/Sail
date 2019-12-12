@@ -125,7 +125,7 @@ class TimelineViewController: UIViewController, Instantiatable {
     }
     
     @objc func openNewPost() {
-        let vc = NewPostViewController.instantiate(environment: self.environment)
+        let vc = NewPostViewController.instantiate(.init(text: quickPostField.text), environment: environment)
         navigationController?.pushViewController(vc, animated: true)
     }
     

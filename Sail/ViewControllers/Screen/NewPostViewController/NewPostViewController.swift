@@ -14,7 +14,9 @@ import SnapKit
 import SeaAPI
 
 class NewPostViewController: UIViewController, Instantiatable, Injectable {
-    typealias Input = Void
+    struct Input {
+        var text: String?
+    }
     typealias Environment = SeaAccountToken
     let environment: Environment
     var input: Input
@@ -52,6 +54,7 @@ class NewPostViewController: UIViewController, Instantiatable, Injectable {
     }
     
     func input(_ input: Input) {
+        textView.text = input.text
     }
     
     @objc func send() {
