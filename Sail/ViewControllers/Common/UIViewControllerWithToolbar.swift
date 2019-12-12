@@ -33,6 +33,7 @@ class UIViewControllerWithToolbar: UIViewController {
 
     @objc func keyboardHeightChanged(_ notification: Notification) {
         print(notification.name)
+        guard let window = view.window else { return }
         guard let userInfo = notification.userInfo else { return }
         guard var rect = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
             return
@@ -42,8 +43,12 @@ class UIViewControllerWithToolbar: UIViewController {
         if isHideNotify {
             rect.size.height = 0
         }
+        
+        // Split Over ではwindowの一番下がscreenの一番下ではないのでその分を計算しないといけない
+        // TODO: ちょうどスクリーンの中央にあるとは限らないのでは? でもそもそもとしてスクリーン上のどこにあるかわからなくない?
+        let screenMargin = (window.screen.bounds.maxY - window.frame.maxY) / 2
         let actualSafeArea = view.superview?.safeAreaInsets.bottom ?? 0
-        var bottom = 44 + rect.size.height - actualSafeArea
+        var bottom = 44 + rect.size.height - actualSafeArea - screenMargin
         if bottom < 44 {
             bottom = 44
         }
