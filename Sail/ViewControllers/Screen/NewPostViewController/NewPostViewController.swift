@@ -13,7 +13,7 @@ import Ikemen
 import SnapKit
 import SeaAPI
 
-class NewPostViewController: UIViewController, Instantiatable, Injectable {
+class NewPostViewController: UIViewControllerWithToolbar, Instantiatable, Injectable {
     struct Input {
         var text: String?
     }
@@ -23,11 +23,28 @@ class NewPostViewController: UIViewController, Instantiatable, Injectable {
     
     let textView = UITextView() ※ { v in
         v.font = .preferredFont(forTextStyle: .body)
+        v.backgroundColor = .clear
     }
+    
+    let mediaContainerView = ContainerView()
+    
+    var isMediaKeyboardMode = false {
+        didSet {
+            if isMediaKeyboardMode {
+                textView.inputView = InputMediaView(viewController: self)
+            } else {
+                textView.inputView = nil
+            }
+            textView.reloadInputViews()
+        }
+    }
+    
+    let attachedMediaListVC: AttachedMediaListViewController
     
     required init(with input: Input, environment: Environment) {
         self.input = input
         self.environment = environment
+        attachedMediaListVC = .instantiate([], environment: environment)
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
     }
     
@@ -41,20 +58,39 @@ class NewPostViewController: UIViewController, Instantiatable, Injectable {
         // Do any additional setup after loading the view.
         self.input(input)
         
-        view.addSubview(textView)
+        let stackView = ContainerView() ※ { s in
+            s.addArrangedSubview(textView)
+            s.addArrangedViewController(attachedMediaListVC, parentViewController: self)
+            s.axis = .vertical
+            s.backgroundColor = .clear
+        }
+        view.addSubview(stackView)
+        stackView.snp.makeConstraints { make in
+            make.top.centerX.width.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide)
+        }
         textView.snp.makeConstraints { make in
-            make.center.size.equalToSuperview()
+            make.leading.trailing.equalTo(view.safeAreaLayoutGuide)
         }
         
         title = "New Post"
         
         navigationItem.rightBarButtonItem = .init(image: UIImage(systemName: "paperplane"), style: .plain, target: self, action: #selector(send))
         
-        textView.becomeFirstResponder()
+        toolBar.setItems([
+            .init(image: UIImage(systemName: "photo.on.rectangle"), style: .plain, target: self, action: #selector(showPhotoSelector))
+        ], animated: false)
+        
+        view.bringSubviewToFront(toolBar)
+        view.backgroundColor = .systemBackground
     }
     
     func input(_ input: Input) {
         textView.text = input.text
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        textView.becomeFirstResponder()
     }
     
     @objc func send() {
@@ -76,5 +112,30 @@ class NewPostViewController: UIViewController, Instantiatable, Injectable {
             }
         }
         present(alert, animated: true) { request.resume() }
+    }
+    
+    @objc func showPhotoSelector() {
+        isMediaKeyboardMode.toggle()
+    }
+}
+
+extension NewPostViewController: UINavigationControllerDelegate {}
+
+extension NewPostViewController: UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let resultUrl: URL?
+        if let url = (info[.imageURL] ?? info[.mediaURL]) as? URL {
+            resultUrl = url
+        } else if let image = info[.originalImage] as? UIImage, let data = image.jpegData(compressionQuality: 0) {
+            print(data)
+            resultUrl = nil
+        } else {
+            print(info)
+            resultUrl = nil
+        }
+        if let url = resultUrl {
+            attachedMediaListVC.input(attachedMediaListVC.input + [url])
+        }
+        picker.dismiss(animated: true, completion: nil)
     }
 }

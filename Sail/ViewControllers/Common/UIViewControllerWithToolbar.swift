@@ -32,13 +32,11 @@ class UIViewControllerWithToolbar: UIViewController {
     }
 
     @objc func keyboardHeightChanged(_ notification: Notification) {
-        print(notification.name)
         guard let window = view.window else { return }
         guard let userInfo = notification.userInfo else { return }
         guard var rect = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
             return
         }
-        print(userInfo)
         let isHideNotify = notification.name == UIResponder.keyboardWillHideNotification
         if isHideNotify {
             rect.size.height = 0

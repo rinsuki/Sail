@@ -40,6 +40,9 @@
 		CE93D84C239FEFB10077E230 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93D84B239FEFB10077E230 /* NewPostViewController.swift */; };
 		CEC740992318791500B8615C /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC740982318791500B8615C /* TimelineViewController.swift */; };
 		CED85A6023A21A57000AA3C6 /* UIViewControllerWithToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A5F23A21A57000AA3C6 /* UIViewControllerWithToolbar.swift */; };
+		CED85A6223A23345000AA3C6 /* InputMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6123A23345000AA3C6 /* InputMediaView.swift */; };
+		CED85A6623A2A6FA000AA3C6 /* AttachedMediaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6523A2A6F9000AA3C6 /* AttachedMediaListViewController.swift */; };
+		CED85A6823A2AC85000AA3C6 /* AttachedMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */; };
 		CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */; };
 		CEDE9E54237FCA5C00CFBCC9 /* TopLeftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */; };
 		CEDE9E56237FCE7500CFBCC9 /* ModalNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */; };
@@ -147,6 +150,9 @@
 		CE93D84B239FEFB10077E230 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		CEC740982318791500B8615C /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		CED85A5F23A21A57000AA3C6 /* UIViewControllerWithToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerWithToolbar.swift; sourceTree = "<group>"; };
+		CED85A6123A23345000AA3C6 /* InputMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMediaView.swift; sourceTree = "<group>"; };
+		CED85A6523A2A6F9000AA3C6 /* AttachedMediaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedMediaListViewController.swift; sourceTree = "<group>"; };
+		CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedMediaViewController.swift; sourceTree = "<group>"; };
 		CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftTableViewController.swift; sourceTree = "<group>"; };
 		CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationViewController.swift; sourceTree = "<group>"; };
@@ -415,6 +421,9 @@
 			isa = PBXGroup;
 			children = (
 				CE93D84B239FEFB10077E230 /* NewPostViewController.swift */,
+				CED85A6123A23345000AA3C6 /* InputMediaView.swift */,
+				CED85A6523A2A6F9000AA3C6 /* AttachedMediaListViewController.swift */,
+				CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */,
 			);
 			path = NewPostViewController;
 			sourceTree = "<group>";
@@ -770,12 +779,15 @@
 				CE8FADE323896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */,
 				CEDE9E54237FCA5C00CFBCC9 /* TopLeftTableViewController.swift in Sources */,
 				CE5BD2042319660000244FA7 /* CompactPostViewController.swift in Sources */,
+				CED85A6623A2A6FA000AA3C6 /* AttachedMediaListViewController.swift in Sources */,
 				CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */,
 				CE2734DF231EC09800A25FEB /* LoginConfirmViewController.swift in Sources */,
 				CE1BD1CD231CF300001A8D32 /* EurekaFunctionBuilder.swift in Sources */,
 				CED85A6023A21A57000AA3C6 /* UIViewControllerWithToolbar.swift in Sources */,
 				CE0AC522231700A900E5B1AD /* AppDelegate.swift in Sources */,
+				CED85A6223A23345000AA3C6 /* InputMediaView.swift in Sources */,
 				CEDE9E56237FCE7500CFBCC9 /* ModalNavigationViewController.swift in Sources */,
+				CED85A6823A2AC85000AA3C6 /* AttachedMediaViewController.swift in Sources */,
 				CE0AC524231700A900E5B1AD /* SceneDelegate.swift in Sources */,
 				CE1BD1C9231CEFB2001A8D32 /* LoginInputHostViewController.swift in Sources */,
 				CEC740992318791500B8615C /* TimelineViewController.swift in Sources */,
