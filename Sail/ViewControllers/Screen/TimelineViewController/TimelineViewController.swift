@@ -13,7 +13,7 @@ import SeaAPI
 import SnapKit
 import Ikemen
 
-class TimelineViewController: UIViewController, Instantiatable {
+class TimelineViewController: UIViewControllerWithToolbar, Instantiatable {
     
     typealias Input = Void
     typealias Environment = SeaAccountToken
@@ -29,7 +29,6 @@ class TimelineViewController: UIViewController, Instantiatable {
         v.keyboardDismissMode = .interactive
     }
     let refreshControl = UIRefreshControl()
-    let toolBar = UIToolbar()
     lazy var quickPostField = UITextField() ※ { v in
         v.borderStyle = .roundedRect
         v.translatesAutoresizingMaskIntoConstraints = false
@@ -78,7 +77,6 @@ class TimelineViewController: UIViewController, Instantiatable {
         }
         
         quickSendButton.addTarget(self, action: #selector(sendPost), for: .touchUpInside)
-        view.addSubview(toolBar)
         toolBar.setItems([
             .init(customView: UIStackView(arrangedSubviews: [
                 quickPostField,
@@ -89,12 +87,6 @@ class TimelineViewController: UIViewController, Instantiatable {
                 v.spacing = 8
             }),
         ], animated: false)
-        toolBar.snp.makeConstraints { make in
-            make.centerX.width.equalToSuperview()
-            make.height.equalTo(44)
-            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(44)
-        }
-        self.additionalSafeAreaInsets = .init(top: 0, left: 0, bottom: 44, right: 0)
         
         title = "Timeline"
         
@@ -106,13 +98,6 @@ class TimelineViewController: UIViewController, Instantiatable {
         diffableDataSource.apply(snapshot, animatingDifferences: false, completion: nil)
         
         checkLatestPosts()
-        
-        for name in [
-            UIResponder.keyboardWillHideNotification,
-            UIResponder.keyboardWillChangeFrameNotification,
-        ] {
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardHeightChanged(_:)), name: name, object: nil)
-        }
     }
     
     func cellProvider(_ tableView: UITableView, indexPath: IndexPath, post: SeaPost) -> UITableViewCell {
@@ -154,38 +139,6 @@ class TimelineViewController: UIViewController, Instantiatable {
             }
         }
         task.resume()
-    }
-    
-    @objc func keyboardHeightChanged(_ notification: Notification) {
-        print(notification.name)
-        guard var rect = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
-            return
-        }
-        print(notification.userInfo)
-        let isHideNotify = notification.name == UIResponder.keyboardWillHideNotification
-        if isHideNotify {
-            rect.size.height = 0
-        }
-        let actualSafeArea = view.superview?.safeAreaInsets.bottom ?? 0
-        var bottom = 44 + rect.size.height - actualSafeArea
-        if bottom < 44 {
-            bottom = 44
-        }
-        guard let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else {
-            print("duration is nil or invalid")
-            return
-        }
-        guard let animationCurveRawValue = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt else {
-            print("animationCurveRawValue is nil or invalid")
-            return
-        }
-        let options = UIView.AnimationOptions(rawValue: animationCurveRawValue)
-        
-        UIView.animate(withDuration: duration, delay: 0, options: options, animations: {
-            self.additionalSafeAreaInsets = .init(top: 0, left: 0, bottom: bottom, right: 0)
-            self.view.layoutIfNeeded()
-        })
-        print(rect.size.height)
     }
     
     @objc func sendPost() {
