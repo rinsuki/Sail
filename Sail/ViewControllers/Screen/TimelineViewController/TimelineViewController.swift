@@ -34,6 +34,26 @@ class TimelineViewController: UIViewController, Instantiatable {
         v.borderStyle = .roundedRect
         v.translatesAutoresizingMaskIntoConstraints = false
         v.setContentHuggingPriority(.init(100), for: .horizontal)
+        v.setContentCompressionResistancePriority(.required, for: .vertical)
+    }
+    lazy var quickSendButton = UIButton() ※ { v in
+        v.setImage(UIImage(systemName: "paperplane"), for: .normal)
+    }
+    lazy var quickSendIndicator = UIActivityIndicatorView() ※ { v in
+        v.style = .medium
+    }
+    
+    var currentlyLoading = false {
+        didSet {
+            quickPostField.isEnabled = !currentlyLoading
+            quickSendButton.isHidden = currentlyLoading
+            if currentlyLoading {
+                quickSendIndicator.startAnimating()
+            } else {
+                quickSendIndicator.stopAnimating()
+            }
+            toolBar.layoutIfNeeded()
+        }
     }
     
     required init(with input: Void, environment: Environment) {
@@ -57,13 +77,13 @@ class TimelineViewController: UIViewController, Instantiatable {
             make.center.size.equalToSuperview()
         }
         
+        quickSendButton.addTarget(self, action: #selector(sendPost), for: .touchUpInside)
         view.addSubview(toolBar)
         toolBar.setItems([
             .init(customView: UIStackView(arrangedSubviews: [
                 quickPostField,
-                UIButton() ※ { v in
-                    v.setImage(UIImage(systemName: "paperplane"), for: .normal)
-                }
+                quickSendButton,
+                quickSendIndicator,
             ]) ※ { v in
                 v.axis = .horizontal
                 v.spacing = 8
@@ -169,6 +189,23 @@ class TimelineViewController: UIViewController, Instantiatable {
     }
     
     @objc func sendPost() {
-        print("hoge")
+        guard let text = quickPostField.text else { return }
+        currentlyLoading = true
+        let request = SeaAPI.CreatePost(text: text)
+        let task = environment.userCredential.request(r: request) { result in
+            DispatchQueue.main.async {
+                self.currentlyLoading = false
+            }
+            switch result {
+            case .success(let res):
+                DispatchQueue.main.async {
+                    self.quickPostField.text = nil
+                    self.checkLatestPosts()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+        task.resume()
     }
 }
