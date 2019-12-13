@@ -18,7 +18,7 @@ class InputMediaView: UIView {
         super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
         
-        let buttons = [
+        var buttons = [
             UIButton() ※ { v in
                 v.setImage(UIImage(systemName: "camera"), for: .normal)
                 v.addTarget(self, action: #selector(takePhoto), for: .touchUpInside)
@@ -31,6 +31,10 @@ class InputMediaView: UIView {
                 v.setImage(UIImage(systemName: "folder"), for: .normal)
             },
         ]
+        
+        if !UIImagePickerController.isSourceTypeAvailable(.camera) {
+            buttons.remove(at: 0)
+        }
         
         for button in buttons {
             button.backgroundColor = .systemBackground

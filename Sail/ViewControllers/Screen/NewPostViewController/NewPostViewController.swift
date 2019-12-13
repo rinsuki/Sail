@@ -146,9 +146,11 @@ extension NewPostViewController: UIImagePickerControllerDelegate {
         let resultUrl: URL?
         if let url = (info[.imageURL] ?? info[.mediaURL]) as? URL {
             resultUrl = url
-        } else if let image = info[.originalImage] as? UIImage, let data = image.jpegData(compressionQuality: 0) {
-            print(data)
-            resultUrl = nil
+        } else if let image = info[.originalImage] as? UIImage, let data = image.jpegData(compressionQuality: 0.1) {
+            let url = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
+                .appendingPathComponent(UUID().uuidString + ".jpeg")
+            try! data.write(to: url)
+            resultUrl = url
         } else {
             print(info)
             resultUrl = nil
