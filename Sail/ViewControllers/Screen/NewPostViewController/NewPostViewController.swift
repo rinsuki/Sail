@@ -12,6 +12,8 @@ import SailCore
 import Ikemen
 import SnapKit
 import SeaAPI
+import Hydra
+import CommonCrypto
 
 class NewPostViewController: UIViewControllerWithToolbar, Instantiatable, Injectable {
     struct Input {
@@ -95,23 +97,41 @@ class NewPostViewController: UIViewControllerWithToolbar, Instantiatable, Inject
     
     @objc func send() {
         let text = textView.text ?? ""
+        let uploadUrls = attachedMediaListVC.input
+        let userCredential = environment.userCredential
+
         let alert = UIAlertController(title: "送信中", message: "しばらくお待ちください", preferredStyle: .alert)
-        let request = environment.userCredential.request(r: SeaAPI.CreatePost(text: text)) { result in
-            switch result {
-            case .success(_):
-                DispatchQueue.main.async {
-                    alert.dismiss(animated: true)
-                    self.navigationController?.popViewController(animated: true)
+        present(alert, animated: true)
+        
+        async { _ -> SeaPost in
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = .init(identifier: "en_US_POSIX")
+            dateFormatter.dateFormat = "yyyyMMdd'_'HHmmss"
+            let dateStr = dateFormatter.string(from: .init())
+            
+            let uploadRequests: [SeaAPI.UploadFileToAlbum] = try uploadUrls
+                .map { try Data(contentsOf: $0) }
+                .map {
+                    return .init(
+                        data: $0,
+                        name: "UploadFromSail_\(dateStr)_\(String(format: "%08x", Int.random(in: 0..<4294967296)))"
+                    )
                 }
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    alert.title = "エラー"
-                    alert.message = "エラーが起きました \n\n\(error)"
-                    alert.addAction(.init(title: "Close", style: .cancel, handler: nil))
-                }
-            }
+            let files = try await(Hydra.all(uploadRequests.map { userCredential.requestPromise(r: $0) }))
+            let postRequest = SeaAPI.CreatePost(
+                text: text,
+                fileIds: files.map { $0.id }
+            )
+            return try await(userCredential.requestPromise(r: postRequest))
+        }.then(in: .main) { post in
+            alert.dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
+        }.catch(in: .main) { error in
+            alert.title = "エラー"
+            alert.message = "エラーが起きました \n\n\(error)"
+            alert.addAction(.init(title: "Close", style: .cancel, handler: nil))
         }
-        present(alert, animated: true) { request.resume() }
+
     }
     
     @objc func showPhotoSelector() {

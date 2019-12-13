@@ -19,7 +19,6 @@
 		CE0AC539231700AC00E5B1AD /* SailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC538231700AC00E5B1AD /* SailTests.swift */; };
 		CE0AC544231700AC00E5B1AD /* SailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC543231700AC00E5B1AD /* SailUITests.swift */; };
 		CE1BD1C9231CEFB2001A8D32 /* LoginInputHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1C8231CEFB2001A8D32 /* LoginInputHostViewController.swift */; };
-		CE1BD1CD231CF300001A8D32 /* EurekaFunctionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */; };
 		CE2734DF231EC09800A25FEB /* LoginConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2734DE231EC09800A25FEB /* LoginConfirmViewController.swift */; };
 		CE2734E1231EC72700A25FEB /* AuthClient.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2734E0231EC72700A25FEB /* AuthClient.plist */; };
 		CE2734E6231ECC8B00A25FEB /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2734E5231ECC8B00A25FEB /* AuthClient.swift */; };
@@ -43,6 +42,8 @@
 		CED85A6223A23345000AA3C6 /* InputMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6123A23345000AA3C6 /* InputMediaView.swift */; };
 		CED85A6623A2A6FA000AA3C6 /* AttachedMediaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6523A2A6F9000AA3C6 /* AttachedMediaListViewController.swift */; };
 		CED85A6823A2AC85000AA3C6 /* AttachedMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */; };
+		CED85A6923A37727000AA3C6 /* EurekaFunctionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */; };
+		CED85A6C23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6B23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift */; };
 		CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */; };
 		CEDE9E54237FCA5C00CFBCC9 /* TopLeftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */; };
 		CEDE9E56237FCE7500CFBCC9 /* ModalNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */; };
@@ -153,6 +154,7 @@
 		CED85A6123A23345000AA3C6 /* InputMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMediaView.swift; sourceTree = "<group>"; };
 		CED85A6523A2A6F9000AA3C6 /* AttachedMediaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedMediaListViewController.swift; sourceTree = "<group>"; };
 		CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedMediaViewController.swift; sourceTree = "<group>"; };
+		CED85A6B23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeaUserCredential+requestPromise.swift"; sourceTree = "<group>"; };
 		CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftTableViewController.swift; sourceTree = "<group>"; };
 		CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationViewController.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 		CE2734E8231ECC9600A25FEB /* Extends */ = {
 			isa = PBXGroup;
 			children = (
+				CED85A6A23A378AE000AA3C6 /* SeaAPI */,
 				CE8FADE123896DBF00B0CF94 /* UIKit */,
 				CE1BD1CB231CF2E5001A8D32 /* Eureka */,
 			);
@@ -426,6 +429,14 @@
 				CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */,
 			);
 			path = NewPostViewController;
+			sourceTree = "<group>";
+		};
+		CED85A6A23A378AE000AA3C6 /* SeaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CED85A6B23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift */,
+			);
+			path = SeaAPI;
 			sourceTree = "<group>";
 		};
 		CEDE9E50237FCA3100CFBCC9 /* TopViewController */ = {
@@ -782,7 +793,6 @@
 				CED85A6623A2A6FA000AA3C6 /* AttachedMediaListViewController.swift in Sources */,
 				CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */,
 				CE2734DF231EC09800A25FEB /* LoginConfirmViewController.swift in Sources */,
-				CE1BD1CD231CF300001A8D32 /* EurekaFunctionBuilder.swift in Sources */,
 				CED85A6023A21A57000AA3C6 /* UIViewControllerWithToolbar.swift in Sources */,
 				CE0AC522231700A900E5B1AD /* AppDelegate.swift in Sources */,
 				CED85A6223A23345000AA3C6 /* InputMediaView.swift in Sources */,
@@ -792,7 +802,9 @@
 				CE1BD1C9231CEFB2001A8D32 /* LoginInputHostViewController.swift in Sources */,
 				CEC740992318791500B8615C /* TimelineViewController.swift in Sources */,
 				CE5BD20923198E8500244FA7 /* IconViewController.swift in Sources */,
+				CED85A6C23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift in Sources */,
 				CE2734E6231ECC8B00A25FEB /* AuthClient.swift in Sources */,
+				CED85A6923A37727000AA3C6 /* EurekaFunctionBuilder.swift in Sources */,
 				CE93D84C239FEFB10077E230 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1298,7 +1310,7 @@
 			repositoryURL = "https://github.com/rinsuki/swift-sea-api.git";
 			requirement = {
 				kind = revision;
-				revision = 05a2e2fb8a0b259732dfac4ef74e560de384f852;
+				revision = aee6f53b1895cf88a91244c71c3bfd577cfa0952;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -6,6 +6,7 @@ PODS:
   - GRDB.swift (4.5.0):
     - GRDB.swift/standard (= 4.5.0)
   - GRDB.swift/standard (4.5.0)
+  - HydraAsync (2.0.2)
   - KeychainAccess (4.1.0)
   - libwebp (1.0.0):
     - libwebp/core (= 1.0.0)
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - Eureka (~> 5.1.0)
   - EurekaFormBuilder (~> 0.2.0)
   - GRDB.swift
+  - HydraAsync
   - KeychainAccess
   - Mew (from `https://github.com/rinsuki/Mew.git`, branch `fix/podspec`)
   - Nuke (~> 8.3)
@@ -57,6 +59,7 @@ SPEC REPOS:
     - Eureka
     - EurekaFormBuilder
     - GRDB.swift
+    - HydraAsync
     - KeychainAccess
     - libwebp
     - Nuke
@@ -79,6 +82,7 @@ SPEC CHECKSUMS:
   Eureka: 18a5076dcf0c41f9cd9748aa1c42f4d11434bdae
   EurekaFormBuilder: f34ff96197bad3e2e980f27886f061b1f100001b
   GRDB.swift: f9c4cabfb4d1266685e80b1f6ea433eb61c7950c
+  HydraAsync: 690b8c1c9dcde7ee1093cee363a6c1ce36b56a83
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
   libwebp: d7e0c95fe97245c97e08101eba10702ebb0f6101
   Mew: 64d6aa86b5730bb76ff2dd9b30454c574cbf7303
@@ -87,6 +91,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   "※ikemen": da47fe6e0acfbe241611221f4d98ade266bf50a2
 
-PODFILE CHECKSUM: 32479f92a158d1f78b89f15718787fdfa5279a56
+PODFILE CHECKSUM: 844f83b0bc39ea3067c67880ac37a3091421b6b7
 
 COCOAPODS: 1.7.5

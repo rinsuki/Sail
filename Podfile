@@ -9,6 +9,7 @@ target 'SailCore' do
   pod 'GRDB.swift'
   pod 'KeychainAccess'
   pod '※ikemen'
+  pod 'HydraAsync'
 end
 
 target 'Sail' do
