@@ -23,7 +23,6 @@
 		CE2734E1231EC72700A25FEB /* AuthClient.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2734E0231EC72700A25FEB /* AuthClient.plist */; };
 		CE2734E6231ECC8B00A25FEB /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2734E5231ECC8B00A25FEB /* AuthClient.swift */; };
 		CE5BD2042319660000244FA7 /* CompactPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BD2022319660000244FA7 /* CompactPostViewController.swift */; };
-		CE5BD2052319660000244FA7 /* CompactPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5BD2032319660000244FA7 /* CompactPostViewController.xib */; };
 		CE5BD20923198E8500244FA7 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BD20723198E8500244FA7 /* IconViewController.swift */; };
 		CE5BD20A23198E8500244FA7 /* IconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5BD20823198E8500244FA7 /* IconViewController.xib */; };
 		CE8F7BF9238519FF00E32601 /* SailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F7BF0238519FF00E32601 /* SailCore.framework */; };
@@ -37,6 +36,8 @@
 		CE8F7C1523866C0700E32601 /* ApplicationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7C1423866C0700E32601 /* ApplicationGroup.swift */; };
 		CE8FADE323896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FADE223896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift */; };
 		CE93D84C239FEFB10077E230 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93D84B239FEFB10077E230 /* NewPostViewController.swift */; };
+		CEC3814623CA203D00C603E3 /* CompactPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3814523CA203D00C603E3 /* CompactPostView.swift */; };
+		CEC3814823CA2B9700C603E3 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3814723CA2B9700C603E3 /* SpacerView.swift */; };
 		CEC740992318791500B8615C /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC740982318791500B8615C /* TimelineViewController.swift */; };
 		CED85A6023A21A57000AA3C6 /* UIViewControllerWithToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A5F23A21A57000AA3C6 /* UIViewControllerWithToolbar.swift */; };
 		CED85A6223A23345000AA3C6 /* InputMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6123A23345000AA3C6 /* InputMediaView.swift */; };
@@ -135,7 +136,6 @@
 		CE2734E0231EC72700A25FEB /* AuthClient.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthClient.plist; sourceTree = "<group>"; };
 		CE2734E5231ECC8B00A25FEB /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
 		CE5BD2022319660000244FA7 /* CompactPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactPostViewController.swift; sourceTree = "<group>"; };
-		CE5BD2032319660000244FA7 /* CompactPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompactPostViewController.xib; sourceTree = "<group>"; };
 		CE5BD20723198E8500244FA7 /* IconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewController.swift; sourceTree = "<group>"; };
 		CE5BD20823198E8500244FA7 /* IconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconViewController.xib; sourceTree = "<group>"; };
 		CE8F7BF0238519FF00E32601 /* SailCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SailCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +149,8 @@
 		CE8F7C1423866C0700E32601 /* ApplicationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationGroup.swift; sourceTree = "<group>"; };
 		CE8FADE223896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewDiffableDataSource+plainSnapshot.swift"; sourceTree = "<group>"; };
 		CE93D84B239FEFB10077E230 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		CEC3814523CA203D00C603E3 /* CompactPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactPostView.swift; sourceTree = "<group>"; };
+		CEC3814723CA2B9700C603E3 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		CEC740982318791500B8615C /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		CED85A5F23A21A57000AA3C6 /* UIViewControllerWithToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerWithToolbar.swift; sourceTree = "<group>"; };
 		CED85A6123A23345000AA3C6 /* InputMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMediaView.swift; sourceTree = "<group>"; };
@@ -338,7 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5BD2022319660000244FA7 /* CompactPostViewController.swift */,
-				CE5BD2032319660000244FA7 /* CompactPostViewController.xib */,
+				CEC3814523CA203D00C603E3 /* CompactPostView.swift */,
 			);
 			path = CompactPostViewController;
 			sourceTree = "<group>";
@@ -359,6 +361,7 @@
 				CE5BD1FD2319647200244FA7 /* CompactPostViewController */,
 				CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */,
 				CED85A5F23A21A57000AA3C6 /* UIViewControllerWithToolbar.swift */,
+				CEC3814723CA2B9700C603E3 /* SpacerView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -635,7 +638,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5BD2052319660000244FA7 /* CompactPostViewController.xib in Resources */,
 				CE2734E1231EC72700A25FEB /* AuthClient.plist in Resources */,
 				CE5BD20A23198E8500244FA7 /* IconViewController.xib in Resources */,
 				CE0AC52E231700AC00E5B1AD /* LaunchScreen.storyboard in Resources */,
@@ -787,6 +789,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC3814623CA203D00C603E3 /* CompactPostView.swift in Sources */,
 				CE8FADE323896DD900B0CF94 /* UITableViewDiffableDataSource+plainSnapshot.swift in Sources */,
 				CEDE9E54237FCA5C00CFBCC9 /* TopLeftTableViewController.swift in Sources */,
 				CE5BD2042319660000244FA7 /* CompactPostViewController.swift in Sources */,
@@ -800,6 +803,7 @@
 				CED85A6823A2AC85000AA3C6 /* AttachedMediaViewController.swift in Sources */,
 				CE0AC524231700A900E5B1AD /* SceneDelegate.swift in Sources */,
 				CE1BD1C9231CEFB2001A8D32 /* LoginInputHostViewController.swift in Sources */,
+				CEC3814823CA2B9700C603E3 /* SpacerView.swift in Sources */,
 				CEC740992318791500B8615C /* TimelineViewController.swift in Sources */,
 				CE5BD20923198E8500244FA7 /* IconViewController.swift in Sources */,
 				CED85A6C23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift in Sources */,

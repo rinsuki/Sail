@@ -19,14 +19,9 @@ class CompactPostViewController: UIViewController, Instantiatable, Injectable {
     let environment: Environment
     var input: Input
     
-    var iconViewController: IconViewController
-    @IBOutlet weak var iconContainerView: ContainerView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var screenNameLabel: UILabel!
-    @IBOutlet weak var createdAtLabel: UILabel!
-    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var viaAppLabel: UILabel!
-    @IBOutlet weak var botLabel: UILabel!
+    let content = CompactPostView()
+    
+    let iconViewController: IconViewController
     
     required init(with input: Input, environment: Environment) {
         self.input = input
@@ -43,19 +38,23 @@ class CompactPostViewController: UIViewController, Instantiatable, Injectable {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        iconContainerView.addArrangedViewController(iconViewController, parentViewController: self)
-        textView.textContainerInset = .zero
-        textView.textContainer.lineFragmentPadding = 0
+        view.addSubview(content)
+        content.snp.makeConstraints { make in
+            make.center.size.equalTo(view.safeAreaLayoutGuide).inset(8)
+        }
+        content.iconContainerView.addArrangedViewController(iconViewController, parentViewController: self)
+//        textView.textContainerInset = .zero
+//        textView.textContainer.lineFragmentPadding = 0
         
         self.input(input)
     }
     
     func input(_ input: Input) {
         iconViewController.input(input.user)
-        nameLabel.text = input.user.name
-        textView.text = input.text
-        screenNameLabel.text = "@\(input.user.screenName)"
-        viaAppLabel.text = "via \(input.application.name)"
-        botLabel.isHidden = !input.application.isAutomated
+        content.nameLabel.text = input.user.name
+        content.textView.text = input.text
+        content.screenNameLabel.text = "@\(input.user.screenName)"
+        content.viaLabel.text = "via \(input.application.name)"
+        content.botFlagLabel.isHidden = !input.application.isAutomated
     }
 }
