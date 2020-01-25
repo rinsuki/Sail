@@ -11,6 +11,7 @@
 		A7863A114EBC0F5F891CCE86 /* Pods_SailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6CF5AE33E11503C00CC466 /* Pods_SailUITests.framework */; };
 		BCF8D8748A5FA27DC1E4B41C /* Pods_SailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3734FAF422DB4023930FC35 /* Pods_SailTests.framework */; };
 		BF06FEBFAB146FD35881A8F6 /* Pods_Sail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7326A19B3E2F59F45D2FFFC6 /* Pods_Sail.framework */; };
+		CE086DE223CB64AB000440E0 /* NotSelectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE086DE123CB64AB000440E0 /* NotSelectableTextView.swift */; };
 		CE0AC522231700A900E5B1AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC521231700A900E5B1AD /* AppDelegate.swift */; };
 		CE0AC524231700A900E5B1AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AC523231700A900E5B1AD /* SceneDelegate.swift */; };
 		CE0AC528231700AC00E5B1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0AC527231700AC00E5B1AD /* Assets.xcassets */; };
@@ -115,6 +116,7 @@
 		C04478262F0C7826A917A375 /* Pods-SailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailTests.release.xcconfig"; path = "Target Support Files/Pods-SailTests/Pods-SailTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3734FAF422DB4023930FC35 /* Pods_SailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89890F44715A56E1A8F8E80 /* Pods-SailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailTests.debug.xcconfig"; path = "Target Support Files/Pods-SailTests/Pods-SailTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE086DE123CB64AB000440E0 /* NotSelectableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSelectableTextView.swift; sourceTree = "<group>"; };
 		CE0AC51E231700A900E5B1AD /* Sail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0AC521231700A900E5B1AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0AC523231700A900E5B1AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				CE5BD20623198E4700244FA7 /* IconViewController */,
 				CE5BD1FD2319647200244FA7 /* CompactPostViewController */,
 				CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */,
+				CE086DE123CB64AB000440E0 /* NotSelectableTextView.swift */,
 				CED85A5F23A21A57000AA3C6 /* UIViewControllerWithToolbar.swift */,
 				CEC3814723CA2B9700C603E3 /* SpacerView.swift */,
 			);
@@ -798,6 +801,7 @@
 				CE2734DF231EC09800A25FEB /* LoginConfirmViewController.swift in Sources */,
 				CED85A6023A21A57000AA3C6 /* UIViewControllerWithToolbar.swift in Sources */,
 				CE0AC522231700A900E5B1AD /* AppDelegate.swift in Sources */,
+				CE086DE223CB64AB000440E0 /* NotSelectableTextView.swift in Sources */,
 				CED85A6223A23345000AA3C6 /* InputMediaView.swift in Sources */,
 				CEDE9E56237FCE7500CFBCC9 /* ModalNavigationViewController.swift in Sources */,
 				CED85A6823A2AC85000AA3C6 /* AttachedMediaViewController.swift in Sources */,

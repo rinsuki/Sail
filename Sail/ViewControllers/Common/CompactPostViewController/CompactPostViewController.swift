@@ -12,6 +12,7 @@ import SeaAPI
 import Nuke
 import Mew
 import SailCore
+import SafariServices
 
 class CompactPostViewController: UIViewController, Instantiatable, Injectable {
     typealias Input = SeaPost
@@ -45,7 +46,12 @@ class CompactPostViewController: UIViewController, Instantiatable, Injectable {
         content.iconContainerView.addArrangedViewController(iconViewController, parentViewController: self)
 //        textView.textContainerInset = .zero
 //        textView.textContainer.lineFragmentPadding = 0
-        
+        content.tapImageCallback = { [weak self] file in
+            guard let strongSelf = self else { return }
+            guard let variant = file.variants.filter({ $0.mime != "image/webp" }).first else { return }
+            let safariVC = SFSafariViewController(url: variant.url)
+            strongSelf.present(safariVC, animated: true, completion: nil)
+        }
         self.input(input)
     }
     
@@ -56,5 +62,6 @@ class CompactPostViewController: UIViewController, Instantiatable, Injectable {
         content.screenNameLabel.text = "@\(input.user.screenName)"
         content.viaLabel.text = "via \(input.application.name)"
         content.botFlagLabel.isHidden = !input.application.isAutomated
+        content.files = input.files
     }
 }
