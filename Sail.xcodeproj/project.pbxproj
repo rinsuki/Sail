@@ -46,6 +46,7 @@
 		CED85A6823A2AC85000AA3C6 /* AttachedMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */; };
 		CED85A6923A37727000AA3C6 /* EurekaFunctionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */; };
 		CED85A6C23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6B23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift */; };
+		CEDA6FF123DD9F6D00DF4141 /* UITableViewCustomizableDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6FF023DD9F6D00DF4141 /* UITableViewCustomizableDiffableDataSource.swift */; };
 		CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */; };
 		CEDE9E54237FCA5C00CFBCC9 /* TopLeftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */; };
 		CEDE9E56237FCE7500CFBCC9 /* ModalNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */; };
@@ -159,6 +160,7 @@
 		CED85A6523A2A6F9000AA3C6 /* AttachedMediaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedMediaListViewController.swift; sourceTree = "<group>"; };
 		CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachedMediaViewController.swift; sourceTree = "<group>"; };
 		CED85A6B23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeaUserCredential+requestPromise.swift"; sourceTree = "<group>"; };
+		CEDA6FF023DD9F6D00DF4141 /* UITableViewCustomizableDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCustomizableDiffableDataSource.swift; sourceTree = "<group>"; };
 		CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		CEDE9E53237FCA5C00CFBCC9 /* TopLeftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftTableViewController.swift; sourceTree = "<group>"; };
 		CEDE9E55237FCE7500CFBCC9 /* ModalNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationViewController.swift; sourceTree = "<group>"; };
@@ -296,7 +298,8 @@
 		CE1BD1CA231CF267001A8D32 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CE2734E8231ECC9600A25FEB /* Extends */,
+				CEDA6FEE23DD9F3F00DF4141 /* ExtendedClasses */,
+				CE2734E8231ECC9600A25FEB /* Extensions */,
 				CE2734E7231ECC9200A25FEB /* AuthClient */,
 			);
 			path = Utilities;
@@ -319,14 +322,14 @@
 			path = AuthClient;
 			sourceTree = "<group>";
 		};
-		CE2734E8231ECC9600A25FEB /* Extends */ = {
+		CE2734E8231ECC9600A25FEB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CED85A6A23A378AE000AA3C6 /* SeaAPI */,
 				CE8FADE123896DBF00B0CF94 /* UIKit */,
 				CE1BD1CB231CF2E5001A8D32 /* Eureka */,
 			);
-			path = Extends;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CE5BD1FC2319646500244FA7 /* ViewControllers */ = {
@@ -443,6 +446,22 @@
 				CED85A6B23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift */,
 			);
 			path = SeaAPI;
+			sourceTree = "<group>";
+		};
+		CEDA6FEE23DD9F3F00DF4141 /* ExtendedClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA6FEF23DD9F4600DF4141 /* UIKit */,
+			);
+			path = ExtendedClasses;
+			sourceTree = "<group>";
+		};
+		CEDA6FEF23DD9F4600DF4141 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA6FF023DD9F6D00DF4141 /* UITableViewCustomizableDiffableDataSource.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		CEDE9E50237FCA3100CFBCC9 /* TopViewController */ = {
@@ -798,6 +817,7 @@
 				CE5BD2042319660000244FA7 /* CompactPostViewController.swift in Sources */,
 				CED85A6623A2A6FA000AA3C6 /* AttachedMediaListViewController.swift in Sources */,
 				CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */,
+				CEDA6FF123DD9F6D00DF4141 /* UITableViewCustomizableDiffableDataSource.swift in Sources */,
 				CE2734DF231EC09800A25FEB /* LoginConfirmViewController.swift in Sources */,
 				CED85A6023A21A57000AA3C6 /* UIViewControllerWithToolbar.swift in Sources */,
 				CE0AC522231700A900E5B1AD /* AppDelegate.swift in Sources */,
@@ -1318,7 +1338,7 @@
 			repositoryURL = "https://github.com/rinsuki/swift-sea-api.git";
 			requirement = {
 				kind = revision;
-				revision = aee6f53b1895cf88a91244c71c3bfd577cfa0952;
+				revision = 1e0756ab30a01c45899a755067af245b085cb07a;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

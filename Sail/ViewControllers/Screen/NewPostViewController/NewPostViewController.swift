@@ -18,6 +18,7 @@ import CommonCrypto
 class NewPostViewController: UIViewControllerWithToolbar, Instantiatable, Injectable {
     struct Input {
         var text: String?
+        var inReplyToPost: SeaPost?
     }
     typealias Environment = SeaAccountToken
     let environment: Environment
@@ -120,7 +121,8 @@ class NewPostViewController: UIViewControllerWithToolbar, Instantiatable, Inject
             let files = try await(Hydra.all(uploadRequests.map { userCredential.requestPromise(r: $0) }))
             let postRequest = SeaAPI.CreatePost(
                 text: text,
-                fileIds: files.map { $0.id }
+                fileIds: files.map { $0.id },
+                inReplyToId: self.input.inReplyToPost?.id
             )
             return try await(userCredential.requestPromise(r: postRequest))
         }.then(in: .main) { post in

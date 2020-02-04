@@ -13,7 +13,7 @@ import SeaAPI
 import SnapKit
 import Ikemen
 
-class TimelineViewController: UIViewControllerWithToolbar, Instantiatable {
+class TimelineViewController: UIViewControllerWithToolbar, Instantiatable, UITableViewDelegate {
     
     typealias Input = Void
     typealias Environment = SeaAccountToken
@@ -24,7 +24,7 @@ class TimelineViewController: UIViewControllerWithToolbar, Instantiatable {
         case main
     }
     
-    lazy var diffableDataSource: UITableViewDiffableDataSource<Section, SeaPost> = .init(tableView: tableView, cellProvider: self.cellProvider)
+    lazy var diffableDataSource: UITableViewCustomizableDiffableDataSource<Section, SeaPost> = .init(tableView: tableView, cellProvider: self.cellProvider)
     let tableView = UITableView(frame: .zero, style: .plain) ※ { v in
         v.keyboardDismissMode = .interactive
     }
@@ -68,6 +68,9 @@ class TimelineViewController: UIViewControllerWithToolbar, Instantiatable {
         super.viewDidLoad()
         TableViewCell<CompactPostViewController>.register(to: tableView)
 
+        diffableDataSource.isEditable = true
+        
+        tableView.delegate = self
         tableView.dataSource = diffableDataSource
         tableView.refreshControl = refreshControl
         view.addSubview(tableView)
@@ -160,5 +163,20 @@ class TimelineViewController: UIViewControllerWithToolbar, Instantiatable {
             }
         }
         task.resume()
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let itemIdentifier = diffableDataSource.itemIdentifier(for: indexPath) else { return nil }
+        let post = itemIdentifier
+        return .init(actions: [
+            .init(style: .normal, title: "返信", handler: { [weak self] (_, _, result) in
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.pushViewController(
+                    NewPostViewController.instantiate(.init(text: "", inReplyToPost: post), environment: strongSelf.environment),
+                    animated: true
+                )
+                result(true)
+            })
+        ])
     }
 }
