@@ -17,6 +17,7 @@ class TopViewController: UISplitViewController {
         viewControllers = [
             UINavigationController(rootViewController: TopLeftTableViewController()),
         ]
+        preferredDisplayMode = .allVisible
     }
     
 
