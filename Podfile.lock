@@ -54,7 +54,7 @@ DEPENDENCIES:
   - "※ikemen"
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - Alamofire
     - Eureka
     - EurekaFormBuilder
@@ -93,4 +93,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 844f83b0bc39ea3067c67880ac37a3091421b6b7
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
