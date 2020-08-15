@@ -9,7 +9,7 @@ target 'SailCore' do
   pod 'GRDB.swift'
   pod 'KeychainAccess'
   pod '※ikemen'
-  pod 'HydraAsync'
+  pod 'HydraAsync', '~> 2.0.3'
 end
 
 target 'Sail' do
@@ -17,10 +17,9 @@ target 'Sail' do
 
   # Pods for Sail
   pod 'Nuke', '~> 8.3'
-  pod 'Nuke-WebP-Plugin'
   
   pod 'Mew', :git => 'https://github.com/rinsuki/Mew.git', :branch => 'fix/podspec'
-  pod 'Eureka', '~> 5.1.0'
+  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'xcode12'
   pod 'EurekaFormBuilder', '~> 0.2.0'
   
   pod 'SnapKit', '~> 5.0.1'

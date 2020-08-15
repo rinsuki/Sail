@@ -44,7 +44,6 @@
 		CED85A6223A23345000AA3C6 /* InputMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6123A23345000AA3C6 /* InputMediaView.swift */; };
 		CED85A6623A2A6FA000AA3C6 /* AttachedMediaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6523A2A6F9000AA3C6 /* AttachedMediaListViewController.swift */; };
 		CED85A6823A2AC85000AA3C6 /* AttachedMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6723A2AC85000AA3C6 /* AttachedMediaViewController.swift */; };
-		CED85A6923A37727000AA3C6 /* EurekaFunctionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */; };
 		CED85A6C23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A6B23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift */; };
 		CEDA6FF123DD9F6D00DF4141 /* UITableViewCustomizableDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6FF023DD9F6D00DF4141 /* UITableViewCustomizableDiffableDataSource.swift */; };
 		CEDE9E52237FCA4300CFBCC9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE9E51237FCA4300CFBCC9 /* TopViewController.swift */; };
@@ -132,7 +131,6 @@
 		CE0AC543231700AC00E5B1AD /* SailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailUITests.swift; sourceTree = "<group>"; };
 		CE0AC545231700AC00E5B1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1BD1C8231CEFB2001A8D32 /* LoginInputHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputHostViewController.swift; sourceTree = "<group>"; };
-		CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaFunctionBuilder.swift; sourceTree = "<group>"; };
 		CE1BD1CE231D2F39001A8D32 /* Sail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sail.entitlements; sourceTree = "<group>"; };
 		CE1BD1CF231D500F001A8D32 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CE2734DE231EC09800A25FEB /* LoginConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfirmViewController.swift; sourceTree = "<group>"; };
@@ -308,7 +306,6 @@
 		CE1BD1CB231CF2E5001A8D32 /* Eureka */ = {
 			isa = PBXGroup;
 			children = (
-				CE1BD1CC231CF300001A8D32 /* EurekaFunctionBuilder.swift */,
 			);
 			path = Eureka;
 			sourceTree = "<group>";
@@ -832,7 +829,6 @@
 				CE5BD20923198E8500244FA7 /* IconViewController.swift in Sources */,
 				CED85A6C23A378C5000AA3C6 /* SeaUserCredential+requestPromise.swift in Sources */,
 				CE2734E6231ECC8B00A25FEB /* AuthClient.swift in Sources */,
-				CED85A6923A37727000AA3C6 /* EurekaFunctionBuilder.swift in Sources */,
 				CE93D84C239FEFB10077E230 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

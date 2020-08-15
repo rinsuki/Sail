@@ -1,96 +1,69 @@
 PODS:
   - Alamofire (4.9.1)
-  - Eureka (5.1.0)
+  - Eureka (5.2.1)
   - EurekaFormBuilder (0.2.0):
     - Eureka (~> 5.0)
   - GRDB.swift (4.5.0):
     - GRDB.swift/standard (= 4.5.0)
   - GRDB.swift/standard (4.5.0)
-  - HydraAsync (2.0.2)
+  - HydraAsync (2.0.3)
   - KeychainAccess (4.1.0)
-  - libwebp (1.0.0):
-    - libwebp/core (= 1.0.0)
-    - libwebp/dec (= 1.0.0)
-    - libwebp/demux (= 1.0.0)
-    - libwebp/dsp (= 1.0.0)
-    - libwebp/enc (= 1.0.0)
-    - libwebp/mux (= 1.0.0)
-    - libwebp/utils (= 1.0.0)
-    - libwebp/webp (= 1.0.0)
-  - libwebp/core (1.0.0):
-    - libwebp/webp
-  - libwebp/dec (1.0.0):
-    - libwebp/core
-  - libwebp/demux (1.0.0):
-    - libwebp/core
-  - libwebp/dsp (1.0.0):
-    - libwebp/core
-  - libwebp/enc (1.0.0):
-    - libwebp/core
-  - libwebp/mux (1.0.0):
-    - libwebp/core
-  - libwebp/utils (1.0.0):
-    - libwebp/core
-  - libwebp/webp (1.0.0)
   - Mew (0.1.0)
   - Nuke (8.3.1)
-  - Nuke-WebP-Plugin (4.0.0):
-    - libwebp (= 1.0.0)
-    - Nuke (~> 8.0)
   - SnapKit (5.0.1)
   - "※ikemen (0.6.0)"
 
 DEPENDENCIES:
   - Alamofire (~> 4.9.1)
-  - Eureka (~> 5.1.0)
+  - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `xcode12`)
   - EurekaFormBuilder (~> 0.2.0)
   - GRDB.swift
-  - HydraAsync
+  - HydraAsync (~> 2.0.3)
   - KeychainAccess
   - Mew (from `https://github.com/rinsuki/Mew.git`, branch `fix/podspec`)
   - Nuke (~> 8.3)
-  - Nuke-WebP-Plugin
   - SnapKit (~> 5.0.1)
   - "※ikemen"
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - Eureka
     - EurekaFormBuilder
     - GRDB.swift
     - HydraAsync
     - KeychainAccess
-    - libwebp
     - Nuke
-    - Nuke-WebP-Plugin
     - SnapKit
     - "※ikemen"
 
 EXTERNAL SOURCES:
+  Eureka:
+    :branch: xcode12
+    :git: https://github.com/xmartlabs/Eureka.git
   Mew:
     :branch: fix/podspec
     :git: https://github.com/rinsuki/Mew.git
 
 CHECKOUT OPTIONS:
+  Eureka:
+    :commit: f5651e328e099393e51b63f1abe78153cbacf90f
+    :git: https://github.com/xmartlabs/Eureka.git
   Mew:
     :commit: 6b751020575ab88cbcec43726018d35a68dd94ab
     :git: https://github.com/rinsuki/Mew.git
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Eureka: 18a5076dcf0c41f9cd9748aa1c42f4d11434bdae
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
   EurekaFormBuilder: f34ff96197bad3e2e980f27886f061b1f100001b
   GRDB.swift: f9c4cabfb4d1266685e80b1f6ea433eb61c7950c
-  HydraAsync: 690b8c1c9dcde7ee1093cee363a6c1ce36b56a83
+  HydraAsync: e931acbcd0733d157fe50561a98d3140ba4ba2df
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
-  libwebp: d7e0c95fe97245c97e08101eba10702ebb0f6101
   Mew: 64d6aa86b5730bb76ff2dd9b30454c574cbf7303
   Nuke: 85fb80f8df0cb26c28d2f4e0cb7fb93bcd6548d3
-  Nuke-WebP-Plugin: 1d582afdee4884da4c8e5237df4e46d8468c4c4d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   "※ikemen": da47fe6e0acfbe241611221f4d98ade266bf50a2
 
-PODFILE CHECKSUM: 844f83b0bc39ea3067c67880ac37a3091421b6b7
+PODFILE CHECKSUM: c5c2b609a6592ebb00637de31b87ac2cc0c53d13
 
 COCOAPODS: 1.8.4
